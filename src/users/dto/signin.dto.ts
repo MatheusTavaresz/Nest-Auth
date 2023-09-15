@@ -1,6 +1,6 @@
 import { IsEmail, IsNotEmpty, IsString, MinLength } from "class-validator";
 
-export class SignupDto{
+export class SigninDto{
     @IsNotEmpty()
     @IsString()
     @IsEmail()
