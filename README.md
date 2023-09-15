@@ -2,72 +2,66 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+  # Autenticação Simples com NestJS
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Descrição
 
-## Description
+Este é um projeto de aplicação server-side construído com NestJS e TypeScript. O projeto provavelmente possui funcionalidades de autenticação e autorização e usa MongoDB como seu banco de dados. Está configurado para usar JWT (JSON Web Tokens) para autenticação.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Funcionalidades
 
-## Installation
+- **NestJS**: Um framework Node.js progressivo para construir aplicações server-side eficientes e escaláveis.
+- **TypeScript**: Superset de JavaScript que compila para código JavaScript limpo.
+- **Mongoose**: Modelagem elegante de objetos MongoDB para Node.js.
+- **Autenticação JWT**: Utiliza `@nestjs/jwt` e `@nestjs/passport` para manipulação da autenticação baseada em JWT.
+- **Validação de Dados**: Usa `class-validator` e `class-transformer` para validação e transformação de dados.
+- **Hash de Senha**: Utiliza `bcrypt` para segurança de senhas.
 
-```bash
-$ npm install
-```
+## Instalação
 
-## Running the app
+Primeiro, certifique-se de que você tem Node.js e npm instalados. Depois, execute:
 
-```bash
-# development
-$ npm run start
+\`\`\`bash
+npm install
+\`\`\`
 
-# watch mode
-$ npm run start:dev
+## Scripts Disponíveis
 
-# production mode
-$ npm run start:prod
-```
+No diretório do projeto, você pode executar:
 
-## Test
+- `npm run build`: Constrói a aplicação.
+- `npm run format`: Formata o código usando Prettier.
+- `npm start`: Inicia a aplicação.
+- `npm run start:dev`: Inicia a aplicação em modo de desenvolvimento com hot-reloading.
+- `npm run start:debug`: Inicia a aplicação em modo de debug.
+- `npm run start:prod`: Inicia a aplicação em modo de produção.
+- `npm run lint`: Verifica o código-fonte, tentando corrigir problemas triviais automaticamente.
+- `npm test`: Executa a suíte de testes Jest.
+- `npm run test:watch`: Executa a suíte de testes Jest em modo watch.
+- `npm run test:cov`: Executa a suíte de testes Jest e gera um relatório de cobertura.
+- `npm run test:debug`: Executa a suíte de testes Jest em modo de debug.
+- `npm run test:e2e`: Executa testes de ponta a ponta.
 
-```bash
-# unit tests
-$ npm run test
+## Dependências
 
-# e2e tests
-$ npm run test:e2e
+Aqui estão algumas das principais dependências usadas neste projeto:
 
-# test coverage
-$ npm run test:cov
-```
+- `@nestjs/common`, `@nestjs/core`: Módulos principais do NestJS
+- `@nestjs/mongoose`: Para banco de dados MongoDB
+- `@nestjs/jwt`, `@nestjs/passport`: Para autenticação
+- `bcrypt`: Para hash de senha
+- `class-transformer`, `class-validator`: Para validação e transformação de dados
+- `dotenv`: Para gerenciar variáveis de ambiente
+- `jsonwebtoken`: Para manipulação de JSON Web Tokens
+- `passport`, `passport-jwt`: Para manipulação da autenticação
 
-## Support
+## Dependências de Desenvolvimento
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+- `@nestjs/cli`, `@nestjs/schematics`: CLI e esquemáticos do NestJS
+- `@nestjs/testing`: Para testes no NestJS
+- `jest`, `ts-jest`, `supertest`: Para execução de testes
+- `prettier`, `eslint`: Para formatação de código e linting
 
-## Stay in touch
+## Autor
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+Matheus Patrick - [LinkedIn](https://www.linkedin.com/in/matheus-patrickz/)
