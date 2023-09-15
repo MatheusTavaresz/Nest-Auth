@@ -6,7 +6,7 @@
 
 ## Descrição
 
-Este é um projeto de aplicação server-side construído com NestJS e TypeScript. O projeto provavelmente possui funcionalidades de autenticação e autorização e usa MongoDB como seu banco de dados. Está configurado para usar JWT (JSON Web Tokens) para autenticação.
+Este é um projeto de aplicação server-side construído com NestJS e TypeScript. E está configurado para usar JWT (JSON Web Tokens) para autenticação, o projeto possui funcionalidades de autenticação e autorização e usa MongoDB como banco de dados.
 
 ## Funcionalidades
 
